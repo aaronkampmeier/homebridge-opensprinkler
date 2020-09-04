@@ -24,7 +24,7 @@ module.exports = function (homebridge) {
 
       config.pollIntervalMs = config.pollIntervalMs || 5000
       config.defaultDurationSecs = config.defaultDurationSecs || 600
-      config.enabledStationIds = config.enabledStationIds || [0,1,2,3]
+
       if (!config.host) {
         throw("Host must be specified in the configuration!")
       }
@@ -57,4 +57,3 @@ module.exports = function (homebridge) {
   homebridge.registerPlatform(PLATFORM_NAME, SprinklerPlatform);
 
 };
-
